@@ -1,0 +1,31 @@
+{
+  "name": "wc__new",
+  "version": "1.0.0",
+  "description": "new project for wc",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rizraelle/wc__new.git"
+  },
+  "keywords": [
+    "gaz"
+  ],
+  "author": "Rizraelle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rizraelle/wc__new/issues"
+  },
+  "homepage": "https://github.com/Rizraelle/wc__new#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "postcss-nested": "^3.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.0"
+  }
+}
