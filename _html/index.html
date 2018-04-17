@@ -6,92 +6,94 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Main page</title>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/fontawesome-all.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="build/main.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/fontawesome-all.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../build/main.css">
     </head>
 
     <body>
     <!-- HEADER -->
         <header>
             <div class="header__menu--line">
-                <div class="header__inner">
-                    <div class="menu__line">
-                        <nav class="menu__line--list">
-                            <a class="menu__line--item active" href="/" title="Новости банка">
-                                Новости банка
-                            </a>
-                            <a class="menu__line--item" href="/longread/" title="Long read">
-                                Long read
-                            </a>
-                            <a class="menu__line--item" href="/lyfestyle/" title="Lifestyle">
-                                Lifestyle
-                            </a>
-                            <a class="menu__line--item" href="/photo/" title="Фото">
-                                Фото
-                            </a>
-                            <a class="menu__line--item" href="/video/" title="Видео">
-                                Видео
-                            </a>
-                            <a class="menu__line--item" href="/transformation/" title="Трансформация">
-                                Трансформация
-                            </a>
-                            <a class="menu__line--item" href="/transformation/" title="Регионы">
-                                Регионы
-                            </a>
-                            <a class="menu__line--item" href="/transformation/" title="Промышленность">
-                                Промышленность
-                            </a>
-                        </nav>
-                    </div>
+                <div class="container">
+                    <div class="header__inner row">
+                        <div class="menu__line">
+                            <nav class="menu__line--list">
+                                <a class="menu__line--item active" href="/" title="Новости банка">
+                                    Новости банка
+                                </a>
+                                <a class="menu__line--item" href="/longread/" title="Long read">
+                                    Long read
+                                </a>
+                                <a class="menu__line--item" href="/lyfestyle/" title="Lifestyle">
+                                    Lifestyle
+                                </a>
+                                <a class="menu__line--item" href="/photo/" title="Фото">
+                                    Фото
+                                </a>
+                                <a class="menu__line--item" href="/video/" title="Видео">
+                                    Видео
+                                </a>
+                                <a class="menu__line--item" href="/transformation/" title="Трансформация">
+                                    Трансформация
+                                </a>
+                                <a class="menu__line--item" href="/transformation/" title="Регионы">
+                                    Регионы
+                                </a>
+                                <a class="menu__line--item" href="/transformation/" title="Промышленность">
+                                    Промышленность
+                                </a>
+                            </nav>
+                        </div>
 
 
-                    <!-- search form-->
+                        <!-- search form-->
 
-                    <div class="header__search--field">
-                        <div class="top-search-field__form">
-                            <form action="/search/index.php">
-                                <label for="search_input" hidden="">ПОИСК</label>
-                                <input id="search_input" name="q" type="text" placeholder="ПОИСК" aria-label="Поиск">
-                                <input id="search_submit" name="s" value="Rechercher" type="submit" aria-label="Поиск">
-                            </form>
+                        <div class="header__search--field">
+                            <div class="top-search-field__form">
+                                <form action="/search/index.php">
+                                    <label for="search_input" hidden="">ПОИСК</label>
+                                    <input id="search_input" name="q" type="text" placeholder="ПОИСК" aria-label="Поиск">
+                                    <input id="search_submit" name="s" value="Researcher" type="submit" aria-label="Поиск">
+                                </form>
+                            </div>
+                            <div class="top-search-field__icon">
+                                <svg class="icon icon-search icon_block--top-search-field">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/.default/static/i/sprite/sprite.svg#search"></use>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="top-search-field__icon">
-                            <svg class="icon icon-search icon_block--top-search-field">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/local/templates/.default/static/i/sprite/sprite.svg#search"></use>
-                            </svg>
-                        </div>
-                    </div>
 
-                    <div class="currencies container">
-                        <div class="currencies__head">
-                            Курс валют
-                        </div>
-                        <div class="currensies__row row">
-                            <div class="currensies__name">
-                                USD
+                        <div class="currencies container">
+                            <div class="currencies__head">
+                                Курс валют
                             </div>
-                            <div class="currensies__change">
-                                <span class="currensies__buy">покупка</span>
-                                <span class="currensies__price">55.9</span>
+                            <div class="currensies__row row">
+                                <div class="currensies__name">
+                                    USD
+                                </div>
+                                <div class="currensies__change">
+                                    <span class="currensies__buy">покупка</span>
+                                    <span class="currensies__price">55.9</span>
+                                </div>
+                                <div class="currensies__change">
+                                    <span class="currensies__sell">продажа</span>
+                                    <span>57.3</span>
+                                </div>
                             </div>
-                            <div class="currensies__change">
-                                <span class="currensies__sell">продажа</span>
-                                <span>57.3</span>
-                            </div>
-                        </div>
-                        <div class="currensies__row row">
-                            <div class="currensies__name">
-                                EUR
-                            </div>
-                            <div class="currensies__change">
-                                <span class="currensies__buy">покупка</span>
-                                <span class="currensies__price">70.5</span>
-                            </div>
-                            <div class="currensies__change">
-                                <span class="currensies__sell">продажа</span>
-                                <span>70.7</span>
+                            <div class="currensies__row row">
+                                <div class="currensies__name">
+                                    EUR
+                                </div>
+                                <div class="currensies__change">
+                                    <span class="currensies__buy">покупка</span>
+                                    <span class="currensies__price">70.5</span>
+                                </div>
+                                <div class="currensies__change">
+                                    <span class="currensies__sell">продажа</span>
+                                    <span>70.7</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -100,7 +102,7 @@
         </header>
         <!-- HEADER END -->
 
-        <div class="intro" style="position: fixed; z-index: -1;">
+        <div class="intro">
             <div id="introsvgimage">
                 <svg id="SvgjsSvg1052" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1"
                      xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"

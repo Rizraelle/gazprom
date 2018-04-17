@@ -15,5 +15,65 @@ body {
 
 a {
     text-decoration: none;
+    transition: all 0.2s linear 0s;
 }
 
+* > a {
+    color: #fff;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #2f5bb5, #317cbf);
+    background-size: cover;
+    max-width: 100%;
+}
+
+.intro {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #1551b8, #1774c4);
+}
+
+#introsvg  {
+    width: 100%;
+    margin: 0 auto;
+    height: 1300px;
+    position: relative;
+    z-index: -1;
+}
+
+.menu__line--item {
+    margin: 0 16px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.5;
+    padding: 24px 0;
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    white-space: nowrap;
+}
+
+.menu__line--item:first-child {
+    margin-left: 0;
+}
+
+.menu__line--item.active {
+    opacity: 1;
+    border-bottom: 4px solid #ffffff;
+}
+
+header .header__menu--line {
+    background-color: transparent;
+    border-bottom: solid 4px rgba(255, 255, 255, 0.1);
+    position: relative;
+    width: 100%;
+}
