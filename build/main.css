@@ -167,6 +167,11 @@ button, [type="button"], [type="reset"], [type="submit"] {
 }
 
 
+.wrapper__news {
+    padding-bottom: 50px;
+}
+
+
 .news__breaking {
     width: 50%;
 }
