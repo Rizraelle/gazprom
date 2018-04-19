@@ -27,41 +27,43 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    infinite: true
+                    infinite: true,
+                    arrows: false
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             }
         ]
     });
-    $('.menu__slider').slick({
-        slidesToShow: 8,
-        infinite: false,
-        dots:false,
-        adaptiveHeight:true,
-        pauseOnHover:false,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 6,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
+    // $('.menu__slider').slick({
+    //     slidesToShow: 8,
+    //     infinite: false,
+    //     dots:false,
+    //     adaptiveHeight:true,
+    //     pauseOnHover:false,
+    //     responsive: [
+    //         {
+    //             breakpoint: 1200,
+    //             settings: {
+    //                 slidesToShow: 6,
+    //                 slidesToScroll: 1
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         }
+    //     ]
+    // });
 });
 
 
