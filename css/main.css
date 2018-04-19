@@ -459,6 +459,10 @@ button, [type="button"], [type="reset"], [type="submit"] {
     z-index: -1;
 }
 
+.main__slider .date {
+    margin-top: 50px;
+}
+
 .main__slider .slide__title {
     color: #00549e;
     text-transform: uppercase;
