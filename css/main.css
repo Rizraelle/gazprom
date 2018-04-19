@@ -419,6 +419,10 @@ button, [type="button"], [type="reset"], [type="submit"] {
     color: #222222;
 }
 
+/*.main__slick {*/
+    /*max-width: 900px;*/
+/*}*/
+
 .main__slider .slide {
     border-right: 1px solid #ccddec;
     box-sizing: border-box;
@@ -491,8 +495,43 @@ button, [type="button"], [type="reset"], [type="submit"] {
 
 .slick-arrow {
     position: absolute;
-    right: 0;
+    right: -60px;
 }
+
+.slick-next, .slick-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 30px;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    outline: 0;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #80aacf;
+    border-radius: 3px;
+    background: url(../image/nonactive-arrow.svg) no-repeat center center;
+    background-size: 10px;
+}
+
+.slick-next:focus, .slick-prev:focus {
+    outline: none;
+}
+
+.slick-next {
+    right: -90px;
+    transform: rotate(-180deg);
+}
+
+.main__slider .slick-next:before, .main__slider  .slick-prev:before {
+    content: ' ';
+    display: block;
+    position: relative;
+}
+
 
 
 .wrapper__banner {
