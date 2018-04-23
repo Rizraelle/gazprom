@@ -287,6 +287,10 @@ button, [type="button"], [type="reset"], [type="submit"] {
     margin-right: 5px;
     color: #fff;
     font-size: 20px;
+    height: 20px;
+    width: 24px;
+    background: url("../image/search.svg") no-repeat center center;
+    background-size: 20px;
 }
 
 .currencies {
@@ -441,6 +445,13 @@ button, [type="button"], [type="reset"], [type="submit"] {
     font-size: 14px;
 }
 
+.news__date--breaking {
+    height: 20px;
+    padding-left: 27px;
+    background: url(../image/clock.svg) no-repeat left 5px center;
+    background-size: 14px;
+}
+
 .row__news {
     justify-content: space-between;
 }
@@ -529,6 +540,13 @@ button, [type="button"], [type="reset"], [type="submit"] {
     padding: 12px 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+}
+
+.news__item--date {
+    height: 12px;
+    padding-left: 20px;
+    background: url(../image/clock.svg) no-repeat left 5px center;
+    background-size: 12px;
 }
 
 .date {
@@ -826,6 +844,10 @@ button, [type="button"], [type="reset"], [type="submit"] {
 .banner__date {
     font-size: 18px;
     color: #9f9f9f;
+    height: 20px;
+    padding-left: 27px;
+    background: url(../image/clock.svg) no-repeat left 5px center;
+    background-size: 18px;
 }
 
 .banner__link {
@@ -1122,14 +1144,12 @@ footer .footer__menu--line {
     justify-content: space-between;
     box-shadow: 0 4px 2px -2px rgba(51, 51, 51, 0.1);
     background-color: #fff;
-    z-index: 1;
 }
 
 .news__block:before {
              background-color: #fff;
              bottom: 0;
              box-shadow: 0 0 50px rgba(51, 51, 51, 0.35), 0 0 30px rgba(51, 51, 51, 0.2);
-             border: 1px solid #e1e1e1;
              content: '';
              left: 0;
              opacity: 0;
@@ -1137,7 +1157,7 @@ footer .footer__menu--line {
              right: 0;
              top: 0;
              transition: all .3s ease;
-             z-index: -1;
+             z-index: 5;
 
          }
 
@@ -1157,6 +1177,7 @@ footer .footer__menu--line {
     background: url("../image/news-img-4.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
+    z-index: 10;
 }
 
 @media (max-width: 768px) {
@@ -1172,6 +1193,7 @@ footer .footer__menu--line {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    z-index: 10;
 }
 
 @media (min-width: 768px) {
