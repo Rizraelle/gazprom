@@ -1,3 +1,77 @@
+/* Roboto */
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light'), local('Roboto-Light'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-300.woff2') format('woff2'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-300.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-300italic.woff2') format('woff2'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-300italic.woff') format('woff');
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-regular.woff2') format('woff2'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-italic.woff2') format('woff2'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-italic.woff') format('woff');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-500.woff2') format('woff2'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-500.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-500italic.woff2') format('woff2'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-500italic.woff') format('woff');
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-700.woff2') format('woff2'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-700.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-700italic.woff2') format('woff2'),
+    url('../webfonts/Roboto/roboto-v16-latin_cyrillic-700italic.woff') format('woff');
+    font-style: italic;
+    font-weight: 700;
+}
+/* ===== */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -7,7 +81,7 @@ html, body {
 
 body {
     background-color: #FFF;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     line-height: 1.15;
 }
 
@@ -399,7 +473,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 
 .news__item--text {
     text-overflow: ellipsis;
-    height: 50px;
+    height: 48px;
     overflow: hidden;
     padding: 12px 0;
     display: -webkit-box;
@@ -756,10 +830,10 @@ footer .footer__menu--line {
     @media (max-width: 1200px) {
         text-align: center;
     }
-}
 
-.footer__bottom--section:nth-child(3) {
-    padding-top: 12px;
+        &:nth-child(3) {
+            padding-top: 12px;
+        }
 }
 
 .footer__row {
@@ -783,10 +857,10 @@ footer .footer__menu--line {
         width: 200px;
         margin: 0 auto;
     }
-}
 
-.footer__input::placeholder {
-    color: #fff;
+       &::placeholder {
+            color: #fff;
+        }
 }
 
 .footer__input--button {
@@ -807,10 +881,10 @@ footer .footer__menu--line {
         width: 200px;
         margin: 10px auto;
     }
-}
 
-.footer__input--button:hover {
-    color: #166ec2;
+       &:hover {
+            color: #166ec2;
+        }
 }
 
 .footer__copyright {
@@ -866,6 +940,14 @@ footer .footer__menu--line {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.calendar__span {
+
+    @media (max-width: 576px) {
+        display: block;
+    }
 }
 
 .calendar__label {
@@ -884,20 +966,115 @@ footer .footer__menu--line {
     background-size: 18px;
     border: 1px solid #bebebe;
     border-radius: 3px;
-    padding: 12px;
     padding: 12px 12px 13px;
-    margin: 0 10px;
-}
+    margin: 10px;
 
-.calendar__input:focus {
-    outline: none;
-}
+        &:focus {
+             outline: none;
+         }
 
-.calendar__input::placeholder {
-    color: #bebebe;
-    font-size: 14px;
+        &::placeholder {
+             color: #bebebe;
+             font-size: 14px;
+         }
+
+        @media (max-width: 576px) {
+            display: block;
+            margin: 10px auto;
+        }
 }
 
 
 
 /*NEWS PAGE*/
+
+
+.news__wrapper {
+    background-color: #fff;
+    padding: 50px 0px;
+
+    @media (max-width: 768px) {
+        padding: 50px 15px;
+    }
+}
+
+.news__block {
+    border: 1px solid #e1e1e1;
+    min-height: 250px;
+    margin: 20px auto 0;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 0 4px 2px -2px rgba(51, 51, 51, 0.1);
+
+        &:before {
+             background-color: #fff;
+             bottom: 0;
+             box-shadow: 0 0 50px rgba(51, 51, 51, 0.35), 0 0 30px rgba(51, 51, 51, 0.2);
+             border: 1px solid #e1e1e1;
+             content: '';
+             left: 0;
+             opacity: 0;
+             position: absolute;
+             right: 0;
+             top: 0;
+             transition: all .3s ease;
+             z-index: -1;
+
+         }
+
+        &:hover:before {
+
+            @media (min-width: 768px) {
+                bottom: -30px;
+                left: -30px;
+                opacity: 1;
+                right: -30px;
+                top: -30px;
+            }
+        }
+}
+
+.news__block--photo {
+    height: 100%;
+    background: url("../image/news-img-4.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.news__block--text {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.news__block--photo + .news__block--text {
+
+    @media (min-width: 768px) {
+        padding-left: 30px;
+    }
+}
+
+.news__button {
+    border: 2px solid #e1e1e1;
+    text-align: center;
+    height: 60px;
+    color: #323232;
+    margin-top: 20px;
+    padding-top: 18px;
+    font-weight: 500;
+    font-size: 18px;
+
+        &:hover {
+            background-color: #e1e1e1;
+             color: #323232;
+         }
+}
