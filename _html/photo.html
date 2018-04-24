@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News page</title>
+    <title>Photo</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/fontawesome-all.css">
     <link rel="stylesheet" href="../css/normalize.css">
@@ -21,7 +21,7 @@
             <div class="header__inner row">
                 <div class="menu__line">
                     <nav class="menu__line--list">
-                        <a class="menu__line--item active" href="/" title="Новости банка">
+                        <a class="menu__line--item" href="/" title="Новости банка">
                             Новости банка
                         </a>
                         <a class="menu__line--item" href="/longread/" title="Long read">
@@ -30,7 +30,7 @@
                         <a class="menu__line--item" href="/lyfestyle/" title="Lifestyle">
                             Lifestyle
                         </a>
-                        <a class="menu__line--item" href="/photo/" title="Фото">
+                        <a class="menu__line--item active" href="/photo/" title="Фото">
                             Фото
                         </a>
                         <a class="menu__line--item" href="/video/" title="Видео">
@@ -193,7 +193,7 @@
 
 <div class="container wrapper">
     <h1 class="h1">
-        Новости
+        Фото
     </h1>
     <div class="custom__breadcrambs">
         <ol class="breadcrumb">
@@ -203,7 +203,7 @@
                 </a>
             </li>
             <li class="breadcrumb__item is-active">
-                Каталог
+                Фото
             </li>
         </ol>
     </div>
@@ -212,7 +212,7 @@
 <div class="news__wrapper">
     <div class="container">
         <div class="calendar">
-            <span class="calendar__span">Показать новости с</span>
+            <span class="calendar__span">Показать фото с</span>
             <label for="start__calendar" class="calendar__label">Enter a date and time for your party booking:</label>
             <input id="start__calendar" class="calendar__input" type="text" name="partydate" placeholder="чч.мм.гггг">
             <span>по</span>
@@ -221,131 +221,120 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <a href="" title="" class="col-xs-12 col-md-6 news__block row">
-                <div class="col-md-3 news__block--photo">
+    <div class="container container__padded">
+        <div class="row row__photo">
+            <div class="news news__item--wide col-xs-12 col-md-12 col-lg-6">
+                <div class="news__item news__item--photo">
                 </div>
-                <div class="col-sm-12 col-md-9 news__block--text">
-                    <h3 class="news__header">
-                        Газпромбанк и Роснефть готовы к использованию системы СПФС Банка России
-                    </h3>
-                    <div class="news__text">
+                <div class="news__item news__item--preview">
+                    <div class="news__header news__item--header">
+                        Газпромбанк инвестирует в строительство ветропарков
+                    </div>
+                    <div class="news__text news__item--text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
                     <div class="news__date news__item--date date">
-                                 16.03.2018
-                            </div>
+                        16.03.2018
+                    </div>
                 </div>
-            </a>
-            <a href="" title="" class="col-xs-12 col-md-6 news__block row">
-                <div class="col-md-3 news__block--photo">
+                <a href="" title="" class="news__links"></a>
+            </div>
+            <div class="news news__item--wide col-xs-12 col-md-12 col-lg-6">
+                <div class="news__item news__item--photo">
                 </div>
-                <div class="col-sm-12 col-md-9 news__block--text">
-                    <h3 class="news__header">
-                        Газпромбанк и Роснефть готовы к использованию системы СПФС Банка России
-                    </h3>
-                    <div class="news__text">
+                <div class="news__item news__item--preview">
+                    <div class="news__header news__item--header">
+                        Газпромбанк инвестирует в строительство ветропарков
+                    </div>
+                    <div class="news__text news__item--text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
                     <div class="news__date news__item--date date">
-                                 16.03.2018
-                            </div>
+                        16.03.2018
+                    </div>
                 </div>
-            </a>
+                <a href="" title="" class="news__links"></a>
+            </div>
         </div>
-        <div class="row">
-            <a href="" title="" class="col-xs-12 col-md-12 news__block row">
-                <div class="col-xs-12 news__block--text">
-                    <h3 class="news__header">
-                        Газпромбанк и Роснефть готовы к использованию системы СПФС Банка России
-                    </h3>
-                    <div class="news__text">
+        <div class="row row__photo">
+            <div class="news news__item--wide col-xs-12 col-md-12 col-lg-6">
+                <div class="news__item news__item--photo">
+                </div>
+                <div class="news__item news__item--preview">
+                    <div class="news__header news__item--header">
+                        Газпромбанк инвестирует в строительство ветропарков
+                    </div>
+                    <div class="news__text news__item--text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
                     <div class="news__date news__item--date date">
-                                 16.03.2018
-                            </div>
+                        16.03.2018
+                    </div>
                 </div>
-            </a>
+                <a href="" title="" class="news__links"></a>
+            </div>
+            <div class="news news__item--wide col-xs-12 col-md-12 col-lg-6">
+                <div class="news__item news__item--photo">
+                </div>
+                <div class="news__item news__item--preview">
+                    <div class="news__header news__item--header">
+                        Газпромбанк инвестирует в строительство ветропарков
+                    </div>
+                    <div class="news__text news__item--text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div class="news__date news__item--date date">
+                        16.03.2018
+                    </div>
+                </div>
+                <a href="" title="" class="news__links"></a>
+            </div>
         </div>
-        <div class="row">
-            <a href="" title="" class="col-xs-12 col-md-12 news__block row">
-                <div class="col-md-3 news__block--photo">
+        <div class="row row__photo">
+            <div class="news news__item--wide col-xs-12 col-md-12 col-lg-6">
+                <div class="news__item news__item--photo">
                 </div>
-                <div class="col-sm-12 col-md-9 news__block--text">
-                    <h3 class="news__header">
-                        Газпромбанк и Роснефть готовы к использованию системы СПФС Банка России
-                    </h3>
-                    <div class="news__text">
+                <div class="news__item news__item--preview">
+                    <div class="news__header news__item--header">
+                        Газпромбанк инвестирует в строительство ветропарков
+                    </div>
+                    <div class="news__text news__item--text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
                     <div class="news__date news__item--date date">
-                                 16.03.2018
-                            </div>
+                        16.03.2018
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div class="row">
-            <a href="" title="" class="col-xs-12 col-md-12 news__block row">
-                <div class="col-xs-12 news__block--text">
-                    <h3 class="news__header">
-                        Газпромбанк и Роснефть готовы к использованию системы СПФС Банка России
-                    </h3>
-                    <div class="news__text">
+                <a href="" title="" class="news__links"></a>
+            </div>
+            <div class="news news__item--wide col-xs-12 col-md-12 col-lg-6">
+                <div class="news__item news__item--photo">
+                </div>
+                <div class="news__item news__item--preview">
+                    <div class="news__header news__item--header">
+                        Газпромбанк инвестирует в строительство ветропарков
+                    </div>
+                    <div class="news__text news__item--text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
                     <div class="news__date news__item--date date">
-                                 16.03.2018
-                            </div>
-                </div>
-            </a>
-        </div>
-        <div class="row">
-            <a href="" title="" class="col-xs-12 col-md-12 news__block row">
-                <div class="col-md-3 news__block--photo">
-                </div>
-                <div class="col-sm-12 col-md-9 news__block--text">
-                    <h3 class="news__header">
-                        Газпромбанк и Роснефть готовы к использованию системы СПФС Банка России
-                    </h3>
-                    <div class="news__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        16.03.2018
                     </div>
-                    <div class="news__date news__item--date date">
-                                 16.03.2018
-                            </div>
                 </div>
-            </a>
-        </div>
-        <div class="row">
-            <a href="" title="" class="col-xs-12 col-md-12 news__block row">
-                <div class="col-xs-12 news__block--text">
-                    <h3 class="news__header">
-                        Газпромбанк и Роснефть готовы к использованию системы СПФС Банка России
-                    </h3>
-                    <div class="news__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                    <div class="news__date news__item--date date">
-                                 16.03.2018
-                            </div>
-                </div>
-            </a>
+                <a href="" title="" class="news__links"></a>
+            </div>
         </div>
     </div>
 
