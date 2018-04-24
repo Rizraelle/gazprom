@@ -7,7 +7,7 @@ function newClass(){
     } else {
         block.classList.remove('slider');
     }
-};
+}
 
 newClass();
 $(window).resize(newClass);
@@ -19,6 +19,7 @@ $(function() {
 
 	var mySwiper = new Swiper('.swiper-container', {
 		slidesPerView: 3,
+		simulateTouch: false,
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev'
@@ -51,4 +52,4 @@ document.getElementById('search__button').onclick = function(){
 
 $("button").mouseup(function(){
     $(this).blur();
-})
+});
