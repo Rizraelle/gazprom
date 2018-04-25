@@ -17,7 +17,7 @@ $(window).resize(newClass);
 
 $(function() {
 
-	var mySwiper = new Swiper('.swiper-container', {
+	var swiper = new Swiper('.swiper', {
 		slidesPerView: 3,
 		simulateTouch: false,
 		navigation: {
@@ -35,6 +35,20 @@ $(function() {
 			767: {
 				slidesPerView: 1
 			}
+		}
+   });
+
+	var imageSwiper = new Swiper('.image-swiper', {
+		slidesPerView: 'auto',
+		spaceBetween: 10,
+		simulateTouch: false,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev'
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true
 		}
    });
 });
