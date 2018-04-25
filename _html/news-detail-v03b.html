@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News page</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/fontawesome-all.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+    <link rel="stylesheet" href="../build/main.css">
+</head>
+
+<body>
+<!-- HEADER -->
+<header class="main__header">
+    <div class="header__menu--line">
+        <div class="container">
+            <div class="header__inner row">
+                <div class="menu__line">
+                    <nav class="menu__line--list">
+                        <a class="menu__line--item active" href="/" title="Новости банка">
+                            Новости банка
+                        </a>
+                        <a class="menu__line--item" href="/longread/" title="Long read">
+                            Long read
+                        </a>
+                        <a class="menu__line--item" href="/lyfestyle/" title="Lifestyle">
+                            Lifestyle
+                        </a>
+                        <a class="menu__line--item" href="/photo/" title="Фото">
+                            Фото
+                        </a>
+                        <a class="menu__line--item" href="/video/" title="Видео">
+                            Видео
+                        </a>
+                        <a class="menu__line--item" href="/transformation/" title="Трансформация">
+                            Трансформация
+                        </a>
+                        <a class="menu__line--item" href="/transformation/" title="Регионы">
+                            Регионы
+                        </a>
+                        <a class="menu__line--item" href="/transformation/" title="Промышленность">
+                            Промышленность
+                        </a>
+                    </nav>
+                </div>
+
+
+                <!-- search form-->
+
+                <div class="header__search--field">
+                    <div class="top-search-field__form">
+                        <form action="/search/index.php">
+                            <label for="search_input" hidden="">ПОИСК</label>
+                            <input id="search_input" name="q" type="text" placeholder="ПОИСК" aria-label="Поиск" class="search_input">
+                            <input id="search_submit" name="s" value="Researcher" type="submit" aria-label="Поиск">
+                        </form>
+                    </div>
+                    <div class="top-search-field__icon" id="search__button">
+                    </div>
+                </div>
+
+                <div class="currencies">
+                    <div class="currencies__head row">
+                        Курс валют
+                    </div>
+                    <div class="currencies__row row">
+                        <div class="currencies__name">
+                            USD
+                        </div>
+                        <div class="currencies__change">
+                            <span class="currencies__buy">покупка</span>
+                            <span class="currencies__price">55.9</span>
+                        </div>
+                        <div class="currencies__change">
+                            <span class="currencies__sell">продажа</span>
+                            <span class="currencies__price">57.3</span>
+                        </div>
+                    </div>
+                    <div class="currencies__row row">
+                        <div class="currencies__name">
+                            EUR
+                        </div>
+                        <div class="currencies__change">
+                            <span class="currencies__buy">покупка</span>
+                            <span class="currencies__price">70.5</span>
+                        </div>
+                        <div class="currencies__change">
+                            <span class="currencies__sell">продажа</span>
+                            <span class="currencies__price">70.7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- HEADER END -->
+
+<div class="intro">
+    <div id="introsvgimage">
+        <svg id="SvgjsSvg1052" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1"
+             xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+             viewBox="0 0 500 500">
+            <defs id="SvgjsDefs1053">
+                <linearGradient id="SvgjsLinearGradient1055">
+                    <stop id="SvgjsStop1056" stop-opacity="0.05" stop-color="#ffffff" offset="0"></stop>
+                    <stop id="SvgjsStop1057" stop-opacity="0.1" stop-color="#ffffff" offset="0.3"></stop>
+                    <stop id="SvgjsStop1058" stop-opacity="0.2" stop-color="#ffffff" offset="1"></stop>
+                </linearGradient>
+                <linearGradient id="SvgjsLinearGradient1059">
+                    <stop id="SvgjsStop1060" stop-opacity="0" stop-color="#ffffff" offset="0"></stop>
+                    <stop id="SvgjsStop1061" stop-opacity="0.03" stop-color="#ffffff" offset="0.5"></stop>
+                    <stop id="SvgjsStop1062" stop-opacity="0.18" stop-color="#ffffff" offset="0.8"></stop>
+                    <stop id="SvgjsStop1063" stop-opacity="0.05" stop-color="#ffffff" offset="1"></stop>
+                </linearGradient>
+                <linearGradient id="SvgjsLinearGradient1064">
+                    <stop id="SvgjsStop1065" stop-opacity="0" stop-color="#ffffff" offset="0"></stop>
+                    <stop id="SvgjsStop1066" stop-opacity="0" stop-color="#ffffff" offset="0.3"></stop>
+                    <stop id="SvgjsStop1067" stop-opacity="0.08" stop-color="#ffffff" offset="1"></stop>
+                </linearGradient>
+                <radialGradient id="SvgjsRadialGradient1068" fx="0.4" fy="0.2" cx="0.4" cy="0.2" r="0.6">
+                    <stop id="SvgjsStop1069" stop-opacity="0.1" stop-color="#ffffff" offset="0"></stop>
+                    <stop id="SvgjsStop1070" stop-opacity="0" stop-color="#ffffff" offset="1"></stop>
+                </radialGradient>
+                <linearGradient id="SvgjsLinearGradient1071">
+                    <stop id="SvgjsStop1072" stop-opacity="0" stop-color="#ffffff" offset="0"></stop>
+                    <stop id="SvgjsStop1073" stop-opacity="0.02" stop-color="#ffffff" offset="0.3"></stop>
+                    <stop id="SvgjsStop1074" stop-opacity="0.04" stop-color="#ffffff" offset="1"></stop>
+                </linearGradient>
+                <radialGradient id="SvgjsRadialGradient1075" fx="0.5" fy="0.5" cx="0.5" cy="0.5" r="0.9">
+                    <stop id="SvgjsStop1076" stop-opacity="0.2" stop-color="#ffffff" offset="0"></stop>
+                    <stop id="SvgjsStop1077" stop-opacity="0" stop-color="#ffffff" offset="1"></stop>
+                </radialGradient>
+                <radialGradient id="SvgjsRadialGradient1078" fx="0.2" fy="0.2" cx="0.2" cy="0.2" r="0.4">
+                    <stop id="SvgjsStop1079" stop-opacity="0" stop-color="#ffffff" offset="0"></stop>
+                    <stop id="SvgjsStop1080" stop-opacity="0.08" stop-color="#ffffff" offset="1"></stop>
+                </radialGradient>
+                <radialGradient id="SvgjsRadialGradient1081" fx="0.4" fy="0.2" cx="0.4" cy="0.2" r="0.6">
+                    <stop id="SvgjsStop1082" stop-opacity="0" stop-color="#ffffff" offset="0"></stop>
+                    <stop id="SvgjsStop1083" stop-opacity="0.1" stop-color="#ffffff" offset="1"></stop>
+                </radialGradient>
+                <radialGradient id="SvgjsRadialGradient1084" fx="0.4" fy="0.2" cx="0.4" cy="0.2" r="0.6">
+                    <stop id="SvgjsStop1085" stop-opacity="0.08" stop-color="#ffffff" offset="0"></stop>
+                    <stop id="SvgjsStop1086" stop-opacity="0" stop-color="#ffffff" offset="1"></stop>
+                </radialGradient>
+                <mask id="SvgjsMask1088">
+                    <ellipse id="SvgjsEllipse1087" rx="210" ry="220" cx="250" cy="250" fill="#ffffff"></ellipse>
+                </mask>
+            </defs>
+            <g id="SvgjsG1054" mask="url(&quot;#SvgjsMask1088&quot;)" opacity="0.7"
+               transform="matrix(0.9,0,0,0.9,29.24297504425047,74.93920516967773)">
+                <path id="SvgjsPath1089"
+                      d="M34.00000274658203 231.69093209838869C35.14100274658203 218.2209320983887 37.317002746582034 204.43893209838868 38.65600274658203 194.7329320983887C38.990002746582036 192.3059320983887 40.96800274658203 188.7929320983887 41.53700274658203 188.01193209838868C47.329002746582034 180.07493209838867 55.57400274658204 173.4369320983887 62.547002746582024 168.18493209838869C77.51700274658202 156.9079320983887 100.07900274658203 143.1579320983887 125.77000274658201 130.05893209838868C155.405002746582 114.94793209838868 206.26700274658202 93.03393209838868 242.55700274658204 84.02093209838868C266.49500274658203 76.99193209838869 303.32900274658203 70.49193209838869 326.46800274658204 68.8889320983887C339.73000274658204 67.77793209838869 359.779002746582 67.36493209838869 373.82900274658203 69.72093209838869C379.04800274658203 70.59593209838869 390.41300274658204 73.24193209838869 399.948002746582 83.29893209838869C403.436002746582 86.97793209838869 405.759002746582 89.33993209838869 409.151002746582 92.9549320983887C400.768002746582 93.22193209838869 394.34400274658196 92.56093209838869 376.717002746582 94.23993209838869C359.529002746582 95.87693209838869 354.975002746582 95.9399320983887 319.166002746582 103.9609320983887C243.703002746582 124.0329320983887 242.91100274658203 123.9909320983887 161.13600274658202 156.4199320983887C141.640002746582 163.5319320983887 103.40000274658203 180.9889320983887 79.15700274658201 197.0389320983887C73.51600274658202 200.09593209838866 41.01100274658204 225.92993209838866 34.00000274658203 231.69093209838869Z "
+                      opacity="1" fill="url(#SvgjsLinearGradient1064)"></path>
+                <path id="SvgjsPath1090"
+                      d="M47.87100170898438 371.8000009765625C39.861001708984375 355.56800097656253 39.54100170898438 354.91900097656253 30.000001708984385 335.5290009765625C33.19900170898438 334.0880009765625 34.78400170898439 333.4520009765625 37.81700170898438 331.9190009765625C107.92000170898439 299.8800009765625 189.47700170898437 262.62000097656244 249.5350017089844 235.13400097656248C277.7230017089844 222.20500097656247 356.8560017089844 185.69800097656247 400.7890017089844 164.90500097656246C410.41800170898443 159.55800097656248 412.76400170898444 157.6250009765625 423.9570017089844 149.7690009765625C428.9530017089844 144.97300097656247 427.6370017089844 146.68300097656248 430.83400170898443 143.0000009765625C433.5370017089844 147.72000097656246 434.32400170898444 149.23400097656247 436.7340017089844 153.7790009765625C444.99000170898444 172.40100097656247 445.6130017089844 179.92300097656246 449.3430017089844 191.8510009765625C449.7300017089844 193.08800097656245 449.2300017089844 195.77500097656247 448.1850017089844 198.05200097656245C445.88800170898435 202.62500097656246 443.0740017089844 208.46300097656245 433.1360017089844 217.44200097656247C419.5270017089844 228.62600097656247 416.3650017089844 232.23400097656247 387.2300017089844 248.77100097656248C346.0110017089844 269.90000097656247 341.0110017089844 271.52500097656247 297.9910017089844 288.6850009765625C181.49100170898438 333.9010009765625 129.8130017089844 347.5320009765625 66.62000170898438 366.5500009765625C66.27400170898437 366.7480009765625 48.971001708984375 371.2660009765625 47.87100170898438 371.8000009765625Z "
+                      opacity="1" fill="url(#SvgjsRadialGradient1068)"></path>
+                <path id="SvgjsPath1091"
+                      d="M69.9999985961914 141.08600100708009C77.5089985961914 123.45700100708008 84.6969985961914 117.95700100708008 95.3979985961914 112.14400100708008C143.0719985961914 83.76900100708008 226.5719985961914 59.51900100708008 311.5719985961914 58.00000100708008C315.4469985961914 58.43500100708008 319.2389985961914 61.56000100708008 321.2479985961914 64.57700100708007C286.5719985961914 68.01900100708008 171.8219985961914 73.76900100708008 69.9999985961914 141.08600100708009Z "
+                      opacity="1"
+                      transform="matrix(0.9993908270190958,-0.03489949670250097,0.03489949670250097,0.9993908270190958,-3.3548317237925005,6.887817801430856)"
+                      fill="url(#SvgjsLinearGradient1071)"></path>
+                <path id="SvgjsPath1092"
+                      d="M436.75980914306643 141.6189971923828C444.1288091430664 146.7769971923828 455.1618091430664 183.85899719238282 461.06280914306643 191.5179971923828C453.03580914306644 183.2389971923828 440.26380914306645 180.5529971923828 430.31480914306644 178.29999719238282C417.14680914306643 175.88299719238282 412.18980914306644 175.00899719238282 394.16280914306645 173.9589971923828C371.44180914306645 172.6349971923828 337.70180914306644 171.28199719238282 319.32080914306647 170.50799719238282C260.5078091430665 167.1609971923828 153.12980914306647 167.17699719238283 100.84380914306647 143.88399719238282C73.04580914306646 132.42599719238282 66.62880914306646 118.34299719238282 71.47580914306647 105.53499719238283C71.06480914306647 105.51399719238283 73.55080914306647 101.06699719238283 75.56580914306647 98.47099719238284C77.75080914306648 95.63499719238284 80.69580914306647 93.32199719238284 82.45080914306648 91.99999719238284C81.67480914306648 94.07699719238283 81.58180914306648 94.77099719238284 81.17780914306648 95.93699719238283C74.21280914306648 116.00999719238283 101.37980914306648 126.09399719238283 116.5768091430665 130.43999719238283C129.5468091430665 133.25999719238283 158.2968091430665 143.25999719238283 242.29480914306652 144.18299719238283C270.7128091430665 144.11399719238284 311.4998091430665 142.83399719238284 355.7938091430665 141.52399719238284C369.5058091430665 141.22699719238284 387.0078091430665 140.61699719238283 423.4288091430665 139.81399719238283C427.83680914306643 139.8139971923828 435.1118091430664 140.49799719238283 436.75980914306643 141.6189971923828Z "
+                      opacity="0.7" transform="matrix(0.95,0,0,0.95,13.276570129394543,7.087949752807617)"
+                      fill="url(#SvgjsRadialGradient1075)"></path>
+                <path id="SvgjsPath1093"
+                      d="M74.99312548828125 128.00000048828124C73.51312548828125 134.71500048828125 71.36312548828124 141.92000048828123 76.62212548828126 149.88300048828125C83.00112548828125 160.80100048828126 104.34512548828124 168.21600048828125 116.48812548828124 173.23100048828127C131.94012548828124 178.77700048828126 135.37512548828124 179.77700048828126 154.93212548828126 185.47800048828128C192.78512548828127 193.8740004882813 203.53212548828125 196.30900048828127 234.47512548828126 201.13700048828127C273.79012548828126 207.58400048828128 286.0541254882813 210.01400048828128 327.18412548828127 217.38700048828127C360.92212548828127 224.35600048828127 368.1591254882813 225.28300048828126 396.56912548828126 233.78000048828127C428.03012548828127 243.09600048828128 450.59112548828125 263.64000048828126 454.93312548828123 272.5140004882813C457.9841254882812 277.6530004882813 458.5541254882812 282.5980004882813 458.86312548828124 285.6450004882813C458.91812548828125 290.8640004882813 458.5251254882812 292.3330004882813 457.54312548828125 296.9730004882813C455.17612548828123 308.1650004882813 448.43412548828127 329.8640004882813 446.1931254882812 331.6370004882813C445.9701254882812 331.8140004882813 450.1071254882812 310.51500048828126 430.7511254882812 293.6680004882813C420.2011254882812 285.45200048828127 418.2951254882812 284.92100048828127 406.73812548828124 278.9410004882813C393.08612548828125 271.6810004882813 390.1281254882812 271.0140004882813 378.1911254882812 265.5560004882813C356.9201254882812 256.9520004882813 345.2541254882812 254.19200048828134 325.48612548828123 248.8090004882813C306.28812548828125 244.6170004882813 286.4311254882812 240.5540004882813 267.96412548828124 236.9330004882813C250.14312548828124 233.5450004882813 228.24812548828123 229.2270004882813 210.91212548828125 225.89500048828128C194.78012548828124 222.88900048828128 169.74812548828123 217.16900048828128 154.10512548828126 213.6120004882813C132.79812548828124 208.9610004882813 122.74412548828126 205.94900048828129 97.30712548828126 196.9170004882813C77.29512548828126 188.5760004882813 67.08612548828125 177.8890004882813 63.573125488281256 174.0830004882813C58.89912548828126 169.4100004882813 56.08512548828126 161.9110004882813 59.531125488281255 153.8070004882813C59.949125488281254 152.82400048828129 65.85812548828125 141.15100048828128 66.49312548828125 140.27500048828128C68.52612548828125 137.46700048828126 72.54912548828125 131.01000048828126 74.99312548828125 128.00000048828124Z "
+                      transform="matrix(0.98,0,0,0.98,5.16868164062501,4.596380920410155)" opacity="1"
+                      fill="url(#SvgjsRadialGradient1075)"></path>
+                <path id="SvgjsPath1094"
+                      d="M393.8927504882812 364.87800122070314C389.2627504882812 369.78400122070315 385.56275048828115 373.7040012207031 381.77475048828114 377.7180012207031C379.52475048828114 375.73400122070314 377.4267504882812 373.73400122070314 375.1747504882811 371.92600122070314C364.63375048828107 363.4660012207031 352.7237504882811 357.3480012207031 340.4367504882812 351.93000122070316C312.56775048828115 339.64000122070314 283.5407504882812 330.73400122070314 254.02075048828124 323.5690012207031C228.97175048828126 317.48800122070315 203.66875048828126 312.45700122070315 178.49475048828128 306.8930012207031C143.24275048828133 299.10300122070316 108.0467504882813 291.08500122070313 73.81175048828129 279.42100122070315C64.72375048828127 276.32300122070313 55.8737504882813 272.71200122070314 48.33975048828131 266.52900122070315C40.91275048828129 260.4340012207031 35.63075048828131 252.96900122070315 35.046750488281305 243.13300122070314C34.78875048828132 238.79400122070314 35.65675048828132 234.36400122070313 36.22775048828129 230.00300122070314C36.44875048828129 228.31600122070313 36.67275048828128 226.63000122070315 36.90075048828129 224.94200122070313C38.006750488281284 216.73000122070312 39.18775048828127 208.48700122070312 40.365750488281265 200.00000122070313C40.91675048828125 204.1340012207031 41.188750488281244 207.95600122070311 41.96575048828129 211.67400122070313C44.39875048828128 223.31900122070311 51.41675048828131 231.83300122070312 60.84875048828127 238.62100122070314C71.68975048828128 246.42400122070313 83.8067504882813 251.71700122070314 96.20875048828128 256.38300122070314C123.25975048828127 266.56100122070313 151.13175048828134 274.0620012207031 179.03875048828127 281.4180012207031C208.30875048828125 289.1340012207031 237.72775048828123 296.31300122070314 266.85175048828125 304.5420012207031C296.7337504882812 312.9850012207031 325.9467504882813 323.44700122070316 353.75975048828127 337.4610012207031C364.7057504882813 342.97600122070315 375.3027504882813 349.08400122070316 384.7627504882813 356.9680012207031C387.08375048828134 358.90200122070314 389.3497504882813 360.9010012207031 391.65475048828137 362.9230012207031C392.0527504882814 363.2730012207031 392.45375048828134 363.6240012207031 392.8547504882814 363.9750012207031C393.1997504882812 364.27500122070313 393.54475048828124 364.5760012207031 393.8927504882812 364.87800122070314Z "
+                      transform="matrix(0.95,0,0,0.95,10.722319030761724,14.442949676513706)" opacity="0.7"
+                      fill="url(#SvgjsRadialGradient1075)"></path>
+                <path id="SvgjsPath1095"
+                      d="M250.32995825195312 107.12199841308593C249.45095825195312 109.76999841308593 250.3999582519531 114.69099841308594 252.32595825195312 115.81599841308594C324.49295825195316 112.86399841308594 369.4089582519531 107.94699841308594 396.0379582519531 93.96399841308593C392.60695825195313 88.89499841308593 380.85695825195313 77.36299841308593 371.9179582519531 71.99999841308593C379.0139582519531 93.58299841308593 281.70295825195313 103.49099841308593 250.32995825195312 107.12199841308593Z "
+                      opacity="0.7" fill="url(#SvgjsRadialGradient1078)"></path>
+                <path id="SvgjsPath1096"
+                      d="M145.4960008544922 363.2779981994629C146.80300085449218 366.9849981994629 149.3500008544922 374.4629981994629 149.3500008544922 374.4629981994629S148.04200085449222 374.3399981994629 146.90000085449222 374.2869981994629C143.7730008544922 374.0769981994629 141.82300085449222 373.9969981994629 139.09000085449222 373.7669981994629C132.59000085449222 373.2589981994629 130.0940008544922 373.0379981994629 125.8910008544922 372.5379981994629C122.9250008544922 372.1949981994629 115.4330008544922 371.3259981994629 108.0080008544922 370.39999819946286C91.25100085449219 368.1099981994629 92.7400008544922 368.3299981994629 82.33400085449219 366.65199819946287C72.65400085449218 364.7189981994629 68.25600085449219 363.70499819946286 64.47500085449218 362.76099819946285C62.12700085449217 362.1389981994629 57.38600085449218 360.9969981994629 51.17600085449217 358.84699819946286C43.230000854492175 356.5909981994629 41.34400085449218 352.28899819946287 40.98100085449218 347.23199819946285C41.06500085449218 336.2519981994629 40.24700085449217 331.0279981994629 40.000000854492185 319.9999981994629C42.097000854492194 324.3459981994629 44.34400085449218 329.78999819946284 58.50700085449219 337.81399819946284C66.26600085449218 341.75999819946287 68.8540008544922 343.3099981994629 83.35600085449218 348.3689981994629C91.19300085449217 350.8879981994629 90.46500085449219 350.6629981994629 106.16200085449219 355.1099981994629C114.88600085449218 357.2899981994629 122.0680008544922 358.8429981994629 138.69000085449218 362.0329981994629C139.4660008544922 362.1819981994629 142.05800085449218 362.62299819946287 142.83800085449218 362.7309981994629C144.4650008544922 363.0429981994629 143.9660008544922 362.9079981994629 145.4960008544922 363.2779981994629Z "
+                      opacity="1" transform="matrix(0.95,0,0,0.95,4.733750152587888,17.3615753173828)"
+                      fill="url(#SvgjsRadialGradient1081)"></path>
+                <path id="SvgjsPath1097"
+                      d="M120.0000023803711 429.79100065612795C134.4240023803711 438.93600065612793 133.51700238037108 438.9750006561279 145.1630023803711 445.1430006561279C335.0790023803711 426.91200065612793 426.0790023803711 362.66200065612793 432.65700238037107 352.92400065612793C441.2040023803711 333.2250006561279 447.6080023803711 314.54900065612793 453.25400238037105 298.00000065612795C424.49600238037107 339.2450006561279 350.49600238037107 400.2450006561279 120.0000023803711 429.79100065612795Z "
+                      opacity="1" fill="url(#SvgjsRadialGradient1084)"></path>
+            </g>
+        </svg>
+    </div>
+</div>
+
+<div class="page page--pad-bot">
+
+    <div class="container wrapper">
+        <h1 class="h1">
+            Новости
+        </h1>
+        <div class="custom__breadcrambs">
+            <ol class="breadcrumb">
+                <li class="breadcrumb__item">
+                    <a class="breadcrumb__link" href="/" title="Главная" itemprop="url">
+                        Главная
+                    </a>
+                </li>
+                <li class="breadcrumb__item is-active">
+                    Новости
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="news__wrapper">
+        <div class="container">
+            <a class="link link--arrow-prev" href="#">Назад к новостям</a>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1 class="title">Газпромбанк и Роснефть готовы к использованию системы СПФС Банка России</h1>
+                </div>
+            </div>
+
+            <div class="row news__mb40 align-items-end">
+                <div class="col-sm-6">
+                    <div class="date date--big news__item--date">
+                        16.03.2018
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="news__icon-wrap">
+                        <a href="#" class="icon icon--pdf news__icon"></a>
+                        <a href="#" class="icon icon--print news__icon"></a>
+                        <a href="#" class="icon icon--mail news__icon"></a>
+                        <a href="#" class="icon icon--next news__icon"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text">
+                <img class="img img--right" src="../image/banner.jpg" alt="">
+
+                <p>Показатель стоимости кредитного риска Группы за 9 месяцев 2017 года составил 0,5% в сравнении с 1,1% за 9 месяцев 2016 года. Доля стабильных доходов в операционном доходе Группы составила 97,3%, что превысило аналогичный показатель за 9 месяцев 2016 года на 15,7 п.п.</p>
+
+                <ul>
+                    <li>Счетов депо (тип – счет депо владельца) с нулевым остатком ценных бумаг, по которым в течение 1 года не проводилось никаких депозитарных операций;</li>
+                    <li>Торговых счетов депо с нулевым остатком ценных бумаг, принадлежащих клиентам, расторгнувшим договор с Банком ГПБ (АО) о брокерском обслуживании и завершившим с банком все взаиморасчеты.</li>
+                </ul>
+
+                <p>Стабильные доходы Группы от основной банковской деятельности, включающие чистые процентные доходы до вычета резервов под возможное обесценение <a href="#">процентных активов и чистые комиссионные</a> доходы, за 9 месяцев 2017 года составили 108,6 млрд руб. в сравнении со 101,8 млрд руб. за 9 месяцев 2016 года, рост обеспечили как процентные (в большей степени), так и комиссионные доходы.</p>
+
+                <p>Чистый процентный доход Группы за первые 9 месяцев 2017 года составил 97,8 млрд руб., увеличившись на 6,8% по сравнению с 91,6 млрд руб. годом ранее, при этом оба компонента чистого процентного дохода сократились – процентные доходы на 5,0% до 274,1 млрд руб., процентные расходы – на 10,5% до 176,3 млрд руб. преимущественно за счет снижения рыночных ставок. Чистая процентная маржа за 9 месяцев 2017 года составила 3,1%, что на 0,1 п.п. больше, чем аналогичный показатель за 2016 год.</p>
+
+                <div class="quote">
+                    <div class="quote__text">Несмотря на возможный традиционный рост резервов на потери по ссудам и операционных расходов в 4 квартале года, Банк ожидает по итогам 2017 года получение чистой прибыли на уровне не ниже 2016 года и рост объемных показателей бизнеса</div>
+                    <div class="quote__author">Заместитель Председателя Правления Банка ГПБ (АО) Александр Соболь</div>
+                    <div class="quote__img-wrap">
+                        <img class="quote__img" src="../image/photo-7.jpg" alt="">
+                        <div class="quote__img-author">Фото: Алексей Даничев / РИА Новости</div>
+                    </div>
+                </div>
+
+                <p>Сумма привлеченных средств от Банка России на 30 сентября 2017 года составила 92,1 млрд руб., что на 3,6% ниже соответствующего показателя на 31 декабря 2016 года, составившего 95,5 млрд руб. Доля привлечения от Банка России в обязательствах Группы на 30 сентября 2017 года составила 1,9% в сравнении с 2,2% на конец 2016 года.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper__slider main__slider main__slider--image">
+        <div class="container">
+            <div class="image-swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="slide" href="#" tabindex="0">
+                            <img class="slide__img" src="../image/news__img-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide" href="#" tabindex="0">
+                            <img class="slide__img" src="../image/news__img-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide" href="#" tabindex="0">
+                            <img class="slide__img" src="../image/news__img-3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide" href="#" tabindex="0">
+                            <img class="slide__img" src="../image/news-img-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide" href="#" tabindex="0">
+                            <img class="slide__img" src="../image/news__img-5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide" href="#" tabindex="0">
+                            <img class="slide__img" src="../image/news__img-6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-controls">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news__links-wrap">
+        <div class="container">
+            <a class="link link--arrow-prev" href="#">Предыдущая новость</a>
+            <a class="link link--arrow-next" href="#">Следующая новость</a>
+        </div>
+    </div>
+
+
+
+    <div class="comments">
+        <div class="container">
+            <div class="comments__title">Комментарии: 5</div>
+            <textarea class="textarea comments__input" placeholder="Написать комментарий"></textarea>
+
+            <div class="comments__wrap">
+
+                <div class="comment comments__item">
+                    <div class="comment__head">
+                        <div class="comment__title">Елена Федорова</div>
+                        <div class="comment__date">02.04.2018 в 14:50</div>
+                    </div>
+                    <div class="comment__text">Реклама не работает! Нужно было уродливые партаки С куполами И сталиным нанести, чтобы был эффект. А Вот эти аккуратные татуировочки мне даже нравятся.</div>
+                    <button class="comment__btn">Ответить</button>
+                </div>
+
+                <div class="comment comments__item">
+                    <div class="comment__head">
+                        <div class="comment__title">Елена Федорова</div>
+                        <div class="comment__date">02.04.2018 в 14:50</div>
+                    </div>
+                    <div class="comment__text">Реклама не работает! Нужно было уродливые партаки С куполами И сталиным нанести, чтобы был эффект. А Вот эти аккуратные татуировочки мне даже нравятся.</div>
+                    <button class="comment__btn">Ответить</button>
+                </div>
+
+                <div class="comment comments__item">
+                    <div class="comment__head">
+                        <div class="comment__title">Елена Федорова</div>
+                        <div class="comment__date">02.04.2018 в 14:50</div>
+                    </div>
+                    <div class="comment__text">Реклама не работает! Нужно было уродливые партаки С куполами И сталиным нанести, чтобы был эффект. А Вот эти аккуратные татуировочки мне даже нравятся.</div>
+                    <button class="comment__btn">Ответить</button>
+                </div>
+            </div>
+
+            <a href="#" class="news__button comments__btn">Показать все 5 комментариев</a>
+        </div>
+    </div>
+
+    <div class="wrapper__slider main__slider">
+        <div class="container">
+            <div class="swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="slide" href="/personal/take_credit/mortgage/42155/" tabindex="0">
+                            <div class="slide__body">
+                                <div class="slide__title">Трансформация</div>
+                                <div class="slide__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <div class="date news__item--date">
+                                    16.03.2018
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide" href="/personal/take_credit/mortgage/42155/" tabindex="0">
+                            <div class="slide__body">
+                                <div class="slide__title">Регионы</div>
+                                <div class="slide__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <div class="date news__item--date">
+                                    16.03.2018
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide" href="/personal/take_credit/mortgage/42155/" tabindex="0">
+                            <div class="slide__body">
+                                <div class="slide__title">Промышленность</div>
+                                <div class="slide__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <div class="date news__item--date">
+                                    16.03.2018
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide" href="/personal/take_credit/mortgage/42155/" tabindex="0">
+                            <div class="slide__body">
+                                <div class="slide__title">Регионы</div>
+                                <div class="slide__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <div class="date news__item--date">
+                                    16.03.2018
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide" href="/personal/take_credit/mortgage/42155/" tabindex="0">
+                            <div class="slide__body">
+                                <div class="slide__title">Промышленность</div>
+                                <div class="slide__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <div class="date news__item--date">
+                                    16.03.2018
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-controls swiper-controls--middle">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="main__footer">
+    <div class="footer__menu--line">
+        <div class="container">
+            <div class="footer__inner row">
+                <div class="menu__line">
+                    <nav class="menu__line--list">
+                        <a class="menu__line--item active" href="/" title="Новости банка">
+                            Новости банка
+                        </a>
+                        <a class="menu__line--item" href="/longread/" title="Long read">
+                            Long read
+                        </a>
+                        <a class="menu__line--item" href="/lyfestyle/" title="Lifestyle">
+                            Lifestyle
+                        </a>
+                        <a class="menu__line--item" href="/photo/" title="Фото">
+                            Фото
+                        </a>
+                        <a class="menu__line--item" href="/video/" title="Видео">
+                            Видео
+                        </a>
+                        <a class="menu__line--item" href="/transformation/" title="Трансформация">
+                            Трансформация
+                        </a>
+                        <a class="menu__line--item" href="/transformation/" title="Регионы">
+                            Регионы
+                        </a>
+                        <a class="menu__line--item" href="/transformation/" title="Промышленность">
+                            Промышленность
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="row footer__row">
+                <div class="footer__bottom--section col-xs-12 col-md-6 col-lg-1">
+                    <a href="/" title="">Архив</a>
+                </div>
+                <div class="footer__bottom--section col-xs-12 col-md-6 col-lg-2">
+                    <a href="/" title="">Печатные издания</a>
+                </div>
+                <div class="footer__bottom--section contact__input col-xs-12 col-md-12 col-lg-7">
+                    <div class="newsletter__input">
+                        <input type="text" input[type=reset] placeholder="Введите e-mail" name="mail" class=" footer__input">
+                        <a href="" class="footer__input--button">Подписаться</a>
+                    </div>
+                </div>
+                <div class="footer__bottom--section col-xs-12 col-md-12 col-lg-2">
+                    <div class="footer__copyright">
+                        © Банк ГПБ (АО) генеральная лицензия Банка России №354
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="../slick/slick.min.js"></script>
+<script type="text/javascript" src="../js/swiper.min.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
