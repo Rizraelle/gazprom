@@ -2654,8 +2654,17 @@ img {
     border-bottom: 1px solid #dfdfdf;
 }
 
+
+.print__year--row:last-child {
+         border-bottom: none;
+    }
+
 .print__year {
+<<<<<<< HEAD
+    padding: 30px 0;
+=======
     padding: 20px 0;
+>>>>>>> master
     font-weight: 700;
     font-size: 30px;
 }

@@ -2461,6 +2461,10 @@ img {
 
 .print__year--row {
     border-bottom: 1px solid #dfdfdf;
+
+    &:last-child {
+         border-bottom: none;
+    }
 }
 
 .print__year {
