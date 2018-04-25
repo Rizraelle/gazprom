@@ -1905,6 +1905,11 @@ footer .footer__menu--line {
 		text-align: left;
 		margin-top: 30px;
 	}
+
+    &--left {
+        text-align: left;
+        margin-top: 50px;
+    }
 }
 
 .news__icon {

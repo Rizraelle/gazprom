@@ -2068,6 +2068,11 @@ footer .footer__menu--line {
 }
 	}
 
+.news__icon-wrap--left {
+        text-align: left;
+        margin-top: 50px;
+    }
+
 .news__icon {
 	margin-right: 30px;
 }
