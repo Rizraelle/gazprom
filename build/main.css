@@ -2483,3 +2483,30 @@ img {
 .table td {
         border: none;
     }
+
+.video {
+    background: url('../image/photo-2.jpg') no-repeat center / cover;
+    display: block;
+    width: 100%;
+    padding-bottom: 56%;
+    position: relative;
+    transition: .2s ease;
+}
+
+.video::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 120px;
+        height: 120px;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: white url('../image/triangle.svg') no-repeat 55% / auto 40%;
+    }
+
+.video:hover {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+    }
