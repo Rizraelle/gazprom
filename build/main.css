@@ -2370,6 +2370,21 @@ img {
         font-weight: bold;
     }
 
+.quote__img-wrap {
+        margin-top: 35px;
+    }
+
+.quote__img {
+        margin: 0 auto 15px;
+        display: block;
+    }
+
+.quote__img-author {
+        text-align: right;
+        font-size: 15px;
+        color: #535353;
+    }
+
 .news__table-wrap {
     overflow: auto;
 }

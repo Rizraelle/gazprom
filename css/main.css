@@ -2177,6 +2177,21 @@ img {
         color: black;
         font-weight: bold;
     }
+
+    &__img-wrap {
+        margin-top: 35px;
+    }
+
+    &__img {
+        margin: 0 auto 15px;
+        display: block;
+    }
+
+    &__img-author {
+        text-align: right;
+        font-size: 15px;
+        color: #535353;
+    }
 }
 
 .news__table-wrap {
