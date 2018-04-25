@@ -61,6 +61,13 @@ document.getElementById('search__button').onclick = function(){
 };
 
 
+//Hamburger icon
+
+document.getElementById('gamburger-nav').onclick = function(event){
+    event.target.classList.toggle("active");
+};
+
+
 
 //Remove focus from inputs etc.
 
