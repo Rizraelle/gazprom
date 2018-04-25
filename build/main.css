@@ -1161,6 +1161,11 @@ footer .footer__menu--line {
 }
     }
 
+
+.news__wrapper--gray {
+		background-color: #f2f2f2;
+	}
+
 .news__block {
     border: 1px solid #e1e1e1;
     min-height: 250px;
@@ -1678,6 +1683,10 @@ footer .footer__menu--line {
     border: none;
     color: #ffffff;
 }
+.btn_blue:hover {
+		background-color: #19b1f3;
+		box-shadow: 0 1px 0 #258ab6;
+	}
 .btn_big-size {
     font-size: 16px;
     line-height: 1;
@@ -2164,6 +2173,14 @@ footer .footer__menu--line {
 		background-image: url('../image/next.svg');
 	}
 
+.news__mb15 {
+	margin-bottom: 15px;
+}
+
+.news__mr15 {
+	margin-right: 15px;
+}
+
 .news__mb40 {
 	margin-bottom: 40px;
 }
@@ -2227,7 +2244,6 @@ img {
 	padding: 30px 0;
 	background: #f2f2f2;
 	text-align: center;
-	border-bottom: 1px solid #dfdfdf;
 }
 
 @media (min-width: 768px) {
@@ -2252,6 +2268,10 @@ img {
 			margin: 0 0 15px
 	}
 		}
+
+.news__links-wrap--white {
+		background: white;
+	}
 
 .textarea {
 	border: 1px solid #c1c1c1;
@@ -2316,6 +2336,10 @@ img {
 		font-size: 15px;
 		color: black;
 		font-weight: normal;
+	}
+
+.comments--border-top {
+		border-top: 1px solid #dfdfdf;
 	}
 
 .comment {
@@ -2726,3 +2750,81 @@ img {
 		-webkit-transform: scale(1.05);
 		        transform: scale(1.05);
 	}
+
+.file-input {
+	display: inline-block;
+	text-align: left;
+	font-size: 13px;
+	opacity: 1;
+}
+
+.file-input__label {
+		color: #a0a0a0;
+		position: relative;
+		cursor: pointer;
+		margin: 0;
+	}
+
+.file-input__label::before {
+			content: '';
+			display: inline-block;
+			font-size: 1rem;
+			width: 1.6em;
+			height: 1.6em;
+			box-sizing: content-box;
+			background: url(../image/clip.png) no-repeat left;
+			vertical-align: middle;
+		}
+
+.file-input__label:hover,
+		.file-input__label_focus {
+			color: black;
+		}
+
+.file-input__label:hover::before, .file-input__label_focus::before {
+				background-image: url('../image/clip-hover.png');
+			}
+
+.file-input__input {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+.file-input__input:focus + label {
+				color: black;
+			}
+
+.file-input__reset {
+		position: relative;
+		vertical-align: middle;
+		font-size: 1.2em;
+		width: 24px;
+		height: 24px;
+		margin-left: 5px;
+		cursor: pointer;
+		display: none;
+	}
+
+.file-input__reset::after {
+			content: '\2716';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			text-align: center;
+			line-height: 1.5;
+			color: black;
+		}
+
+.file-input_selected .file-input__label::before {
+					display: none;
+				}
+
+.file-input_selected .file-input__reset {
+				display: inline-block;
+			}

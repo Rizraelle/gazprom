@@ -75,3 +75,48 @@ document.getElementById('gamburger-nav').onclick = function(event){
 $("button").mouseup(function(){
     $(this).blur();
 });
+
+$(function() {
+	var
+		classBlock = 'file-input',
+		$fInput = $('.' + classBlock + '__input'), // Выборка всех инпутов типа файл
+		fInputClass = classBlock + '__input', // Класс инпута типа файл
+		classFocusInput = classBlock + '__label_focus', // Класс, добавляющий стили при фокусе (для FF)
+		fSelected = classBlock + '_selected', // Класс инпута с выбранным файлом
+		$fReset = $('.' + classBlock + '__reset'); // Крестики для удаления добавленного файла
+
+	// Обработка добавления файла
+	$fInput.on('change', function() {
+		var
+			$this = $(this),
+			fId = $this.attr('id'), // ID текущего инпута
+			$fLabel = $('label[for=' + fId + ']'), // Label, привязанный к текущему input
+			value = $this.val(); // Путь добавленного файла
+
+		if (!value) return; // Если нажали "отмена"
+
+		$fLabel.text(value.slice(value.lastIndexOf('\\') + 1)); // Отображение названия файла
+		$this.parent().addClass(fSelected);
+	});
+
+	// Обработка удаления файла
+	$fReset.on('click', function() {
+		var
+			$this = $(this),
+			$inpWrap = $this.parent(), // Текущий контейнер инпута
+			$input = $inpWrap.find('.' + fInputClass), // Текущий инпут
+			fId = $input.attr('id'), // ID текущего инпута
+			$fLabel = $('label[for=' + fId + ']'); // Label, привязанный к текущему инпуту
+
+		if (!$input.parent().hasClass(fSelected)) return; // Выбираем только с файлом
+
+		$input.val('');
+		$inpWrap.removeClass(fSelected);
+		$fLabel.text('Выбрать файл');
+	});
+
+	// Обработка фокуса на Firefox
+	$fInput.on( 'focus', function(){ $(this).next().addClass(classFocusInput); });
+	$fInput.on( 'blur', function(){ $(this).next().removeClass(classFocusInput); });
+	/* ========== */
+});
