@@ -51,6 +51,7 @@ document.getElementById('search__button').onclick = function(){
 
 document.getElementById('gamburger-nav').onclick = function(event){
     event.target.classList.toggle("active");
+    document.getElementsByClassName('menu__line--list')[0].classList.toggle("active");
 };
 
 
