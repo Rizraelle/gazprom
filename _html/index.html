@@ -1,383 +1,72 @@
-<!DOCTYPE html>
-
-
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Main page</title>
-        <link rel="shortcut icon" type="image/x-icon" href="../image/Favikon.png">
-        <link rel="stylesheet" href="../css/bootstrap.css">
-        <link rel="stylesheet" href="../css/fontawesome-all.css">
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
-        <link rel="stylesheet" href="../build/main.css">
-    </head>
-
-    <body>
-    <!-- HEADER -->
-    <header class="main__header">
-        <div class="header__menu--line">
-            <div class="container">
-                <div class="header__inner row">
-                    <a class="gamburger js-gamburger js-run-event" title="Меню" tabindex="0" role="button" id="gamburger-nav">
-                        <div class="gamburger__line">
-                        </div>
-                    </a>
-                    <div class="menu__line">
-                        <nav class="menu__line--list">
-                            <a class="menu__line--item" href="/" title="Новости банка">
-                                Новости банка
-                            </a>
-                            <a class="menu__line--item" href="/longread/" title="Long read">
-                                Long read
-                            </a>
-                            <a class="menu__line--item" href="/lyfestyle/" title="Lifestyle">
-                                Lifestyle
-                            </a>
-                            <a class="menu__line--item" href="/photo/" title="Фото">
-                                Фото
-                            </a>
-                            <a class="menu__line--item active" href="/video/" title="Видео">
-                                Видео
-                            </a>
-                            <a class="menu__line--item" href="/transformation/" title="Трансформация">
-                                Трансформация
-                            </a>
-                            <a class="menu__line--item" href="/transformation/" title="Регионы">
-                                Регионы
-                            </a>
-                            <a class="menu__line--item" href="/transformation/" title="Промышленность">
-                                Промышленность
-                            </a>
-
-                            <div class="currencies">
-                                <div class="currencies__head row">
-                                    Курс валют
-                                </div>
-                                <div class="currencies__row row">
-                                    <div class="currencies__name">
-                                        USD
-                                    </div>
-                                    <div class="currencies__change">
-                                        <span class="currencies__buy">покупка</span>
-                                        <span class="currencies__price">55.9</span>
-                                    </div>
-                                    <div class="currencies__change">
-                                        <span class="currencies__sell">продажа</span>
-                                        <span class="currencies__price">57.3</span>
-                                    </div>
-                                </div>
-                                <div class="currencies__row row">
-                                    <div class="currencies__name">
-                                        EUR
-                                    </div>
-                                    <div class="currencies__change">
-                                        <span class="currencies__buy">покупка</span>
-                                        <span class="currencies__price">70.5</span>
-                                    </div>
-                                    <div class="currencies__change">
-                                        <span class="currencies__sell">продажа</span>
-                                        <span class="currencies__price">70.7</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-
-
-                    <!-- search form-->
-
-                    <div class="header__search--field">
-                        <div class="top-search-field__form">
-                            <form action="/search/index.php">
-                                <label for="search_input" hidden="">ПОИСК</label>
-                                <input id="search_input" name="q" type="text" placeholder="ПОИСК" aria-label="Поиск" class="search_input">
-                                <input id="search_submit" name="s" value="Researcher" type="submit" aria-label="Поиск">
-                            </form>
-                        </div>
-                        <div class="top-search-field__icon" id="search__button">
-                        </div>
-                    </div>
-                </div>
+<html><head>
+    <title>Список страниц</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../image/Favikon.png">
+    <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+    <style type="text/css">
+        body {font-size:13px;font-family:Arial;}
+        .page-wrapper {margin:0 auto;padding:0 10px;min-width:300px;max-width:800px;overflow:hidden;}
+        .page-wrapper-head {margin:20px 0;position:relative;}
+        h1,table {margin:20px 0;}
+        .logo-company {margin-top:-15px;position:absolute;top:50%;right:0;}
+        h1 {margin:20px 0;font-weight:bold;font-size:20px;text-align:left;text-transform:uppercase;}
+        h1::before,h1::after {display:none !important;}
+        table {width:100%;}
+        table + h1 {margin-top:50px;}
+        th {vertical-align:middle;padding:3px !important;border-bottom:2px solid #ccc;font-weight:normal;text-align:left;}
+        td {vertical-align:top;border-bottom:1px solid #eaeaea;padding:16px 3px !important;}
+        th.value,td.value {padding-left:5px;width:1px;white-space:nowrap;text-align:center;}
+        th.value,td.value {display:table-cell;}
+        tr.approved td {background:#f2f2f2;}
+        @media only screen and (max-width:480px) {
+            th span {display:none;}
+        }
+    </style>
+    <!--[if lte IE 9]>
+    <script type="text/javascript" src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="wrapper">
+        <div class="page-wrapper-head clearfix">
+            <div class="logo">
+                <img src="../image/logo-letters.svg" alt="" width="200px" height="">
+            </div>
+            <div class="logo-company">
+                <img src="../image/extyl-pro.png" alt="Extyl Pro" width="" height="">
             </div>
         </div>
-    </header>
-        <!-- HEADER END -->
-
-        <div class="intro">
-        </div>
-
-    <div class="page">
-        <div class="container wrapper">
-            <h1 class="h1">
-                Газета ГазПромБанка
-            </h1>
-
-            <div class="wrapper__news">
-                <a href="" title="" class="news__link">
-                    <div class="row__news--breaking">
-                        <div class="row">
-                            <div class="news__breaking news__breaking--photo col-xs-12 col-md-6"></div>
-                            <div class="news__breaking news__breaking--preview col-xs-12 col-md-6">
-                                <h3 class="news__header">
-                                    Газпромбанк и Роснефть готовы к использованию системы СПФС Банка России
-                                </h3>
-                                <div class="news__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                                <div class="news__date news__date--breaking">
-                                    16.03.2018
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <div class="row row__news">
-                    <div class="news news__item--regular col-xs-12 col-md-12 col-lg-6">
-                        <div class="news__item news__item--photo">
-                        </div>
-                        <div class="news__item news__item--preview">
-                            <div class="news__header news__item--header">
-                                Газпромбанк инвестирует в строительство ветропарков
-                            </div>
-                            <div class="news__text news__item--text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                            <div class="news__date news__item--date date">
-                                 16.03.2018
-                            </div>
-                        </div>
-                        <a href="" title="" class="news__links"></a>
-                    </div>
-                    <div class="news news__item--wide col-xs-12 col-md-12 col-lg-6">
-                        <div class="news__item news__item--photo">
-                        </div>
-                        <div class="news__item news__item--preview">
-                            <div class="news__header news__item--header">
-                                Газпромбанк инвестирует в строительство ветропарков
-                            </div>
-                            <div class="news__text news__item--text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                            <div class="news__date news__item--date date">
-                                 16.03.2018
-                            </div>
-                        </div>
-                        <a href="" title="" class="news__links"></a>
-                    </div>
-                </div>
-                <div class="row row__news">
-                    <div class="news news__item--nophoto col-xs-12 col-md-12 col-lg-6">
-                        <div class="news__item news__item--photo">
-                        </div>
-                        <div class="news__item news__item--preview">
-                            <div class="news__header news__item--header">
-                                Газпромбанк инвестирует в строительство ветропарков
-                            </div>
-                            <div class="news__text news__item--text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                            <div class="news__date news__item--date date">
-                                 16.03.2018
-                            </div>
-                        </div>
-                        <a href="" title="" class="news__links"></a>
-                    </div>
-                    <div class="news news__item--video col-xs-12 col-md-12 col-lg-6">
-                        <div class="news__item news__item--photo">
-                            <a href="" title=""></a>
-                        </div>
-                        <div class="news__item news__item--preview">
-                            <div class="news__header news__item--header">
-                                Газпромбанк инвестирует в строительство ветропарков
-                            </div>
-                            <div class="news__text news__item--text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                            <div class="news__date news__item--date date">
-                                 16.03.2018
-                            </div>
-                        </div>
-                        <a href="" title="" class="news__links"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="wrapper__slider main__slider">
-            <div class="container">
-                <div class="swiper swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a class="slide" href="/personal/take_credit/mortgage/42155/" tabindex="0">
-                                <div class="slide__body">
-                                    <div class="slide__title">Трансформация</div>
-                                    <div class="slide__text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                    </div>
-                                    <div class="date news__item--date">
-                                        16.03.2018
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="slide" href="/personal/take_credit/mortgage/42155/" tabindex="0">
-                                <div class="slide__body">
-                                    <div class="slide__title">Регионы</div>
-                                    <div class="slide__text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                    </div>
-                                    <div class="date news__item--date">
-                                        16.03.2018
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="slide" href="/personal/take_credit/mortgage/42155/" tabindex="0">
-                                <div class="slide__body">
-                                    <div class="slide__title">Промышленность</div>
-                                    <div class="slide__text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                    </div>
-                                    <div class="date news__item--date">
-                                        16.03.2018
-                                    </div>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="slide" href="/personal/take_credit/mortgage/42155/" tabindex="0">
-                                <div class="slide__body">
-                                    <div class="slide__title">Регионы</div>
-                                    <div class="slide__text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                    </div>
-                                    <div class="date news__item--date">
-                                        16.03.2018
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="slide" href="/personal/take_credit/mortgage/42155/" tabindex="0">
-                                <div class="slide__body">
-                                    <div class="slide__title">Промышленность</div>
-                                    <div class="slide__text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                    </div>
-                                    <div class="date news__item--date">
-                                        16.03.2018
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-controls">
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="wrapper__banner">
-            <div class="banner">
-                <a href="" title="" class="banner__link">
-                    <div class="container banner__preview">
-                        <div class="row">
-                            <div class="col-xs-12 col-lg-10">
-                                <h2 class="h2">Число вкладчиков ГазПромБанка показало взрывной рост, превысив 5 млн человек</h2>
-                                <div class="date banner__date">
-                                    16.03.2018
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+        <div class="content-wrapper">
+            <h1>Список страниц</h1>
+            <table>
+                <thead>
+                <tr class="head_table">
+                    <th>Страница и ссылка</th>
+                    <th class="value desktop"><i class="fa fa-television"></i> <span>Вёрстка дектопная</span></th>
+                    <th class="value mobile"><i class="fa fa-tablet"></i> <span>Вёртска мобильная</span></th>                        </tr>
+                </thead>
+                <tbody>
+                <tr class="link_table"><td><a href="main.html">Главная</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="news.html">Новости главная</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="news-detail-v03.html">Новость детальная v.1</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="news-detail-v03a.html">Новость детальная v.2</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="news-detail-v03b.html">Новость детальная v.3</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="photo.html">Фото главная</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="photo-detail.html">Фото детальная</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="video.html">Видео главная</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="video-detail.html">Видео детальная</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="about.html">О нас</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="print.html">Печать</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="search.html">Поиск</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="404.html">Страница 404</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                <tr class="link_table"><td><a href="navigation.html">Навигация</a></td><td class="value desktop"><i class="fa fa-check"></i></td><td class="value mobile"><i class="fa fa-check"></i></td></tr>
+                </tbody>
+            </table>
         </div>
     </div>
+</div>
 
-    <footer class="main__footer">
-        <div class="footer__menu--line">
-            <div class="container">
-                <div class="footer__inner row">
-                    <div class="menu__line">
-                        <nav class="menu__line--list">
-                            <a class="menu__line--item active" href="/" title="Новости банка">
-                                Новости банка
-                            </a>
-                            <a class="menu__line--item" href="/longread/" title="Long read">
-                                Long read
-                            </a>
-                            <a class="menu__line--item" href="/lyfestyle/" title="Lifestyle">
-                                Lifestyle
-                            </a>
-                            <a class="menu__line--item" href="/photo/" title="Фото">
-                                Фото
-                            </a>
-                            <a class="menu__line--item" href="/video/" title="Видео">
-                                Видео
-                            </a>
-                            <a class="menu__line--item" href="/transformation/" title="Трансформация">
-                                Трансформация
-                            </a>
-                            <a class="menu__line--item" href="/transformation/" title="Регионы">
-                                Регионы
-                            </a>
-                            <a class="menu__line--item" href="/transformation/" title="Промышленность">
-                                Промышленность
-                            </a>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <div class="container">
-                <div class="row footer__row">
-                    <div class="footer__bottom--section col-xs-12 col-md-6 col-lg-1">
-                        <a href="/" title="">Архив</a>
-                    </div>
-                    <div class="footer__bottom--section col-xs-12 col-md-6 col-lg-2">
-                        <a href="/" title="">Печатные издания</a>
-                    </div>
-                    <div class="footer__bottom--section contact__input col-xs-12 col-md-12 col-lg-7">
-                        <div class="newsletter__input">
-                            <input type="text" input[type=reset] placeholder="Введите e-mail" name="mail" class=" footer__input">
-                            <a href="" class="footer__input--button">Подписаться</a>
-                        </div>
-                    </div>
-                    <div class="footer__bottom--section col-xs-12 col-md-12 col-lg-2">
-                        <div class="footer__copyright">
-                            © Банк ГПБ (АО) генеральная лицензия Банка России №354
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="../slick/slick.min.js"></script>
-    <script type="text/javascript" src="../js/swiper.min.js"></script>
-    <script src="../js/main.js"></script>
-
-    </body>
-</html>
+</body></html>
