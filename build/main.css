@@ -1079,6 +1079,7 @@ footer .footer__menu--line {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1.5px;
+    position: relative;
 }
 
 @media (max-width: 576px) {
@@ -2891,6 +2892,7 @@ img {
 			}
 
 
+
 /*MODAL*/
 
 
@@ -2913,4 +2915,75 @@ img {
     text-align: center;
     padding: 50px 0 90px;
     font-size: 26px;
+}
+
+
+
+/*CALENDAR TEST*/
+
+.calendar__custom {
+    display: none;
+    position: absolute;
+    z-index: 150;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+}
+
+.calendar__custom.active {
+    display: block;
+    left: 50%;
+    top: 100%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+}
+
+.calendar__custom--padded {
+    text-align: center;
+    height: 250px;
+    width: 250px;
+}
+
+.week-name {
+    border-bottom: 1px solid #c4e4f3;
+}
+
+.week-name th {
+    padding: 6px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.caption th {
+    padding: 16px 4px;
+}
+
+.selectyeargrid {
+    color: #009bdf;
+    border-bottom: 1px solid #009bdf;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.day {
+    font-size: 12px;
+    font-weight: 500;
+    height: 36px;
+    width: 36px;
+    margin: 8px 2px;
+    padding-top: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.day:hover {
+        background-color: #065293;
+         color: #fff;
+    }
+
+.day.active {
+    color: #fff;
+    background-color: #009bdf;
 }

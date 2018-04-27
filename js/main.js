@@ -68,9 +68,14 @@ document.getElementById('gamburger-nav').onclick = function(event){
     document.getElementsByClassName('menu__line--list')[0].classList.toggle("active");
 };
 
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-})
+
+//Calendar toggle
+
+document.getElementById('start__calendar').onclick = function(event){
+    document.getElementsByClassName('calendar__custom')[0].classList.toggle("active");
+};
+
+
 
 
 
@@ -79,6 +84,8 @@ $('#myModal').on('shown.bs.modal', function () {
 $("button").mouseup(function(){
     $(this).blur();
 });
+
+
 
 $(function() {
 	var
