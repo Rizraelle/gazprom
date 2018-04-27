@@ -1706,21 +1706,21 @@ footer .footer__menu--line {
 .btn {
     align-items: center;
     border: 2px solid #ccddec;
-    border-radius: 3px;
+    border-radius: 1px;
     box-sizing: border-box;
     cursor: pointer;
     display: inline-flex;
     font-weight: 500;
     justify-content: center;
     min-height: 40px;
-    min-width: 48px;
+    min-width: 120px;
     padding: 19px 48px;
 }
 
 .btn_with-icon {
     border-width: 1px;
     font-size: 12px;
-    padding: 11px 20px;
+    padding: 11px 24px;
     text-transform: none;
 }
 
@@ -1741,6 +1741,10 @@ footer .footer__menu--line {
     line-height: 1;
     padding: 23px;
     min-width: 352px;
+}
+
+.btn_text {
+    font-size: 16px;
 }
 
 
@@ -2907,14 +2911,26 @@ img {
 
 .custom__modal--close {
     display: block;
-    color: #ccddec;
+    color: #5a90c0;
 }
 
 .custom__modal--body {
     color: #303239;
     text-align: center;
-    padding: 50px 0 90px;
+    padding: 50px 0 120px;
     font-size: 26px;
+}
+
+.modal__span--blue {
+    color: #00549e;
+    display: block;
+    margin: 10px auto 20px;
+}
+
+.modal__span--regular {
+    color: #303239;
+    display: block;
+    margin: 0 20px;
 }
 
 
@@ -2928,7 +2944,7 @@ img {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 40px rgba(0, 0, 0, .3);
 }
 
 .calendar__custom.active {
@@ -2986,4 +3002,20 @@ img {
 .day.active {
     color: #fff;
     background-color: #009bdf;
+}
+
+.calendar__custom:before {
+    top: -8px;
+    content: "";
+    display: block;
+    left: 50%;
+    margin-left: -8px;
+    position: absolute;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #ffffff transparent transparent transparent;
 }
