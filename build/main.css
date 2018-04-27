@@ -2340,20 +2340,35 @@ img {
 }
 
 .textarea::-webkit-input-placeholder {
-		color: #9f9f9f;
-	}
+        color: #9f9f9f;
+    }
 
 .textarea:-ms-input-placeholder {
-		color: #9f9f9f;
-	}
+        color: #9f9f9f;
+    }
 
 .textarea::-ms-input-placeholder {
-		color: #9f9f9f;
-	}
+        color: #9f9f9f;
+    }
 
 .textarea::placeholder {
-		color: #9f9f9f;
-	}
+        color: #9f9f9f;
+    }
+
+.textarea__wrapper {
+    position: relative;
+}
+
+.textarea__comment--send {
+    position: absolute;
+    background: url("../image/send-plane.svg") no-repeat center center;
+    background-size: 25px;
+    right: 20px;
+    top: 18px;
+    height: 30px;
+    width: 30px;
+    z-index: 20;
+}
 
 .comments {
 	background: #f2f2f2;
