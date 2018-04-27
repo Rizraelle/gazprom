@@ -193,7 +193,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <a class="btn btn_with-icon btn_blue" title="Отправить" id="submit" data-material="" tabindex="0">
+                            <a class="btn btn_with-icon btn_blue" title="Отправить" id="submit" data-material="" tabindex="0"  data-toggle="modal" data-target="#exampleModalCenter">
                                 <span class="btn_text">Отправить</span>
                             </a>
                             <div class="file-input">
@@ -271,19 +271,23 @@
 </footer>
 
 
-<div id="modal" class="modal opened">
-    <a href="javascript:void(0)" class="modal-overlay"></a>
-    <div class="container">
-        <div class="modal-window">
-            <p class="modal-title">Оставить отзыв</p>
-            <a href="javascript:void(0)" class="modal-close modal-close-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.5 27.5"><path fill="#fff" d="M26 0L13.7 12.3 1.4 0 0 1.6l12.3 12.3L0 26l1.5 1.5 12.3-12.3L26 27.4l1.5-1.4-12.3-12.3L27.4 1.4"></path></svg>
-            </a>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content custom__modal--wrapper">
+            <div class="modal-header custom__modal--header">
+                <button type="button" class="close custom__modal--close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body custom__modal--body">
+                Спасибо за обращение!
+            </div>
         </div>
     </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="../js/main.js"></script>
 <script type="text/javascript" src="../slick/slick.min.js"></script>
 

@@ -68,6 +68,10 @@ document.getElementById('gamburger-nav').onclick = function(event){
     document.getElementsByClassName('menu__line--list')[0].classList.toggle("active");
 };
 
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})
+
 
 
 //Remove focus from inputs etc.
