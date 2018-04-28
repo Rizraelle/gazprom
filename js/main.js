@@ -75,6 +75,10 @@ document.getElementById('start__calendar').onclick = function(event){
     document.getElementsByClassName('calendar__custom')[0].classList.toggle("active");
 };
 
+document.getElementById('finish__calendar').onclick = function(event){
+    document.getElementsByClassName('calendar__custom')[0].classList.toggle("active");
+};
+
 
 
 
